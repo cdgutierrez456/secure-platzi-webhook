@@ -24,7 +24,7 @@ func postHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	router := mux.NewRouter()
 
-	router.HandleFunc("/hello", postHandler).Methods("POST")
+	router.HandleFunc("/hello", postHandler).Methods("GET")
 
 	fmt.Println("Server listening on port 8080")
 
